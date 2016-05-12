@@ -122,7 +122,9 @@ a {
 
 $gray: #323232;
 $green: #2f9781;
+$light_green: #2eb398;
 $deep_blue: #484c5f;
+$black: #222222;
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -133,7 +135,7 @@ body{
 	background-color: #777;
 }
 .width_wraper{
-	max-width: 1020px;
+	width: 1020px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -219,19 +221,29 @@ body{
 	height: 723px;
 	background-color: white;
 	display: flex;
+	justify-content: center;
 	&__wrap{
+		display: flex;
+		flex-direction: column;
 		min-height: 550px;
-		margin: 90px 20px;
+		margin: 144px 20px;
+	}
+	&__items_column{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 65px;
 	}
 }
 
 #hexagon {
-	margin: 80px auto;
+	margin: 0 10px;
 	width: 180px;
 	height: 95px;
 	background: red;
 	position: relative;
 	z-index: 1;
+
 }
 #hexagon:before {
 	content: "";
@@ -262,8 +274,57 @@ body{
 	z-index: 5;
 }
 
+.author_block {
+	min-height: 340px;
+	background-color: $light_green;
+	&__wraper{
+		max-width: 824px;
+		height: 340px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&__description{
+		margin: 0 20px;
+	}
+	&__photo{
+		margin-left: 20px;
+	}
+}
 
+.feedback_form {
+	min-height: 566px;
+	background-color: $gray;
+	&__wraper{
+		max-width: 824px;
+		height: 566px;
+		margin: 0 auto;
 
+	}
+	&__form_elements{
+		
+		display: flex;
+		flex-direction: row;
+		&__description{
+			flex-grow: 1;
+		}
+		& form{
+			min-width: 582px;
+		}
+	}
+}
+
+footer {
+	min-height: 43px;
+	background-color: $black;
+	color: #303030;
+	& p{
+		line-height: 43px;
+		margin-left: 40px;
+	}
+}
 
 .active{
 	color: $green !important;

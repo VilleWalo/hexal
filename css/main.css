@@ -110,7 +110,7 @@ body {
 }
 
 .width_wraper {
-  max-width: 1020px;
+  width: 1020px;
   margin: 0 auto;
   position: relative;
 }
@@ -206,15 +206,37 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content__wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 550px;
-  margin: 90px 20px;
+  margin: 144px 20px;
+}
+
+.content__items_column {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 65px;
 }
 
 #hexagon {
-  margin: 80px auto;
+  margin: 0 10px;
   width: 180px;
   height: 95px;
   background: red;
@@ -254,6 +276,78 @@ body {
       -ms-transform: scale(1.22);
           transform: scale(1.22);
   z-index: 5;
+}
+
+.author_block {
+  min-height: 340px;
+  background-color: #2eb398;
+}
+
+.author_block__wraper {
+  max-width: 824px;
+  height: 340px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author_block__description {
+  margin: 0 20px;
+}
+
+.author_block__photo {
+  margin-left: 20px;
+}
+
+.feedback_form {
+  min-height: 566px;
+  background-color: #323232;
+}
+
+.feedback_form__wraper {
+  max-width: 824px;
+  height: 566px;
+  margin: 0 auto;
+}
+
+.feedback_form__form_elements {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.feedback_form__form_elements__description {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.feedback_form__form_elements form {
+  min-width: 582px;
+}
+
+footer {
+  min-height: 43px;
+  background-color: #222222;
+  color: #303030;
+}
+
+footer p {
+  line-height: 43px;
+  margin-left: 40px;
 }
 
 .active {
