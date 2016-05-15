@@ -156,6 +156,9 @@ body{
 			font-size: 10px;
 			cursor: pointer;
 			position: relative;
+			&:hover{
+				color: gray;
+			}
 	}
 	&__nav_left{
 		& a{
@@ -229,6 +232,7 @@ body{
 		flex-direction: column;
 		min-height: 550px;
 		margin: 144px 20px;
+		margin-bottom: 40px;
 	}
 	&__items_column{
 		display: flex;
@@ -246,6 +250,12 @@ body{
 		bottom: 13px;
 		transform: translateX(-50%);
 	}
+}
+.container:hover{
+	transform: scale(1.5);
+	transition: transform 0.45s;
+	z-index: 20;
+
 }
 
 //----------------------//
@@ -348,11 +358,11 @@ body{
 	}			
 	
 	.hex .corner-2:before {
-		-webkit-transform: rotate(60deg) translate(-43px, -12px);
-		-moz-transform: rotate(60deg) translate(-43px, -12px);
-		-ms-transform: rotate(60deg) translate(-43px, -12px);
-		-o-transform: rotate(60deg) translate(-43px, -12px);
-		transform: rotate(60deg) translate(-43px, -12px);	
+		-webkit-transform: rotate(60deg) translate(-44px, -12px);
+		-moz-transform: rotate(60deg) translate(-44px, -12px);
+		-ms-transform: rotate(60deg) translate(-44px, -12px);
+		-o-transform: rotate(60deg) translate(-44px, -12px);
+		transform: rotate(60deg) translate(-44px, -12px);	
 		bottom:0;
 	}		
 
