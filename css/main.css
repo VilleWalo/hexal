@@ -106,11 +106,12 @@ a {
 /* MAIN */
 /*-----------------------------------------------------------------------------------*/
 body {
-  background-color: #777;
+  background-color: #555;
 }
 
 .width_wraper {
-  width: 1020px;
+  max-width: 1020px;
+  min-width: 850px;
   margin: 0 auto;
   position: relative;
 }
@@ -494,7 +495,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 30%;
-  padding-left: 30px;
+  padding-left: 25px;
   font-size: 14px;
   font-family: 'Lato';
   color: #bebebe;
